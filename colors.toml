@@ -1,0 +1,38 @@
+# Serrit: twilight slate, parchment, gold leaf.
+mode = "dark"
+
+accent = "#dcb662"
+cursor = "#dcb662"
+selection = "#2f3d3a"
+selection_foreground = "#e8e2d0"
+selection_background = "#2f3d3a"
+muted = "#56625f"
+
+background = "#141b1e"
+dark_background = "#101719"
+darker_background = "#0b1012"
+lighter_background = "#1d2629"
+
+foreground = "#e8e2d0"
+dark_foreground = "#9aa29b"
+light_foreground = "#c9c3b2"
+bright_foreground = "#f1ebda"
+
+hyprland_active_border = "#dcb662"
+hyprland_inactive_border = "#2f3d3a"
+
+red = "#e3836f"
+yellow = "#dcb662"
+orange = "#e4b56e"
+green = "#a6c78e"
+cyan = "#93c3b8"
+blue = "#7fa7b8"
+magenta = "#b99ac2"
+brown = "#9c7f5a"
+
+bright_red = "#f0998a"
+bright_yellow = "#ecc97c"
+bright_green = "#bcd9a4"
+bright_cyan = "#aed6cd"
+bright_blue = "#9cc0cf"
+bright_magenta = "#cdb2d4"
