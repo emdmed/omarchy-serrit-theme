@@ -16,6 +16,18 @@ omarchy theme install https://github.com/emdmed/omarchy-serrit-theme
 - `icons.theme`: Yaru sage icons, which sit well next to the greens.
 - A river-valley wallpaper (3840×2160), darkened toward the top so a transparent bar stays readable.
 
+## Make your own wallpaper
+
+`scripts/make-wallpaper.sh` turns any image into a Serrit wallpaper. It crops the image to 3840×2160, maps its tones onto the palette from `colors.toml` (shadows go to slate, highlights to parchment), keeps a little of the original colour, warms the brightest areas with the gold accent, then adds the dark band at the top, a vignette and fine grain. Needs ImageMagick 7.
+
+```sh
+scripts/make-wallpaper.sh ~/Pictures/forest.jpg            # -> backgrounds/forest.jpg
+scripts/make-wallpaper.sh -n 6-forest.jpg ~/Pictures/forest.jpg
+scripts/make-wallpaper.sh -o ~/out ~/Pictures/*.jpg        # batch
+```
+
+Tuning: `-c` how much original colour to keep (default 30), `-b` brightness, `-m` mist (lower is punchier), `-a` gold in the highlights (default 35, try 70 for gilded skies), `-t` top fade height, `-v` vignette, `-g` grain, `-G north` to crop from the top. Run with `-h` for the full list. Because the colours come from `colors.toml`, editing the palette changes every wallpaper you regenerate.
+
 ## Palette
 
 | Role | Hex | Role | Hex |
